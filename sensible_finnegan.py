@@ -32,7 +32,7 @@ def print_ten(gizzard, text_length):
 
     # Dramatic pause..
     time.sleep(1)
-    finns = [x for x in gizzard.make_short_sentence(text_length)]
+    finns = [gizzard.make_short_sentence(text_length) for x in range(10)]
     print("\n".join(finns))
 
 
